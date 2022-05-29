@@ -7,34 +7,19 @@
     android:textAlignment="center"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textContainer"
-        android:layout_width="293dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="60dp"
-        android:background="#000000"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="Enter Item..."
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.237"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/addButton"
         android:layout_width="47dp"
         android:layout_height="38dp"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="60dp"
+        android:layout_marginEnd="28dp"
         android:background="#000000"
         android:backgroundTint="#000000"
         android:foregroundTint="#000000"
         android:text="+"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintHorizontal_bias="0.931"
         app:layout_constraintStart_toEndOf="@+id/textContainer"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,10 +27,23 @@
         android:id="@+id/listContainer"
         android:layout_width="353dp"
         android:layout_height="581dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintTop_toBottomOf="@+id/textContainer"
+        app:layout_constraintVertical_bias="0.692" />
+
+    <EditText
+        android:id="@+id/textContainer"
+        android:layout_width="277dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
